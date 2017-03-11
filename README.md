@@ -2,7 +2,7 @@
 
 arshen atom (pre) config with most usable package.
 
-![A screenshot of your package](./1.jpg)
+![arshen-ac](https://cloud.githubusercontent.com/assets/8210666/23826782/62b7cb3a-06b9-11e7-9534-17d7ab459c70.png)
 
 ## includes
 
