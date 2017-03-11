@@ -3,7 +3,7 @@
     "main": "./lib/arshen-ac",
     "version": "0.9.0",
     "description": "arshen atom config",
-    "repository": "https://github.com/xtoolkit/atom-config",
+    "repository": "https://github.com/xtoolkit/arshen-ac",
     "license": "MIT",
     "engines": {
         "atom": ">=1.0.0 <2.0.0"
