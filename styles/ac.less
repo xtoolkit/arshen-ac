@@ -5,6 +5,21 @@ atom-workspace {
         width: 0;
     }
 
+    atom-panel.left {
+        margin-top: @ui-padding-pane;
+
+        .tool-bar {
+            border-top: 1px solid @base-border-color;
+            border-left: 1px solid @base-border-color;
+            margin-left: @ui-padding-pane;
+            border-top-left-radius: @component-border-radius;
+        }
+
+        .tool-panel {
+            border-top: 1px solid @base-border-color;
+        }
+    }
+
     .tool-bar {
         .ion-navicon-round {
             position: absolute;
@@ -36,7 +51,7 @@ atom-workspace {
         display: block;
         border: 1px solid @base-border-color;
         border-right: 0;
-		border-bottom: 0;
+        border-bottom: 0;
 
         .tab {
             float: right;
@@ -56,7 +71,7 @@ atom-workspace {
             }
 
             &.active {
-                background: #282c34;
+                background: @input-background-color;
                 border-radius: 0;
 
                 &:after {
