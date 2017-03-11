@@ -1,47 +1,47 @@
 {
-    "name": "arshen-ac",
-    "main": "./lib/arshen-ac",
-    "version": "0.9.0",
-    "description": "arshen atom config",
-    "repository": "https://github.com/xtoolkit/arshen-ac",
-    "license": "MIT",
-    "engines": {
-        "atom": ">=1.0.0 <2.0.0"
-    },
-    "dependencies": {
-        "atom-package-deps": "^3.0.7"
-    },
-    "package-deps": [
-        "tool-bar",
-        "atom-beautify",
-        "atom-json-color",
-        "file-icons",
-        "git-plus",
-        "highlight-selected",
-        "minimap",
-        "minimap-highlight-selected",
-        "pigments",
-        "Remote-FTP"
-    ],
-    "consumedServices": {
-        "tool-bar": {
-            "versions": {
-                "^0 || ^1": "consumeToolBar"
-            }
-        }
-    },
-    "keywords": [
-        "arshen",
-        "arshen-ac",
-        "tool-bar",
-        "atom-beautify",
-        "atom-json-color",
-        "file-icons",
-        "git-plus",
-        "highlight-selected",
-        "minimap",
-        "minimap-highlight-selected",
-        "pigments",
-        "Remote-FTP"
-    ]
+  "name": "arshen-ac",
+  "main": "./lib/arshen-ac",
+  "version": "0.9.1",
+  "description": "arshen atom config",
+  "repository": "https://github.com/xtoolkit/arshen-ac",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-package-deps": "^3.0.7"
+  },
+  "package-deps": [
+    "tool-bar",
+    "atom-beautify",
+    "atom-json-color",
+    "file-icons",
+    "git-plus",
+    "highlight-selected",
+    "minimap",
+    "minimap-highlight-selected",
+    "pigments",
+    "Remote-FTP"
+  ],
+  "consumedServices": {
+    "tool-bar": {
+      "versions": {
+        "^0 || ^1": "consumeToolBar"
+      }
+    }
+  },
+  "keywords": [
+    "arshen",
+    "arshen-ac",
+    "tool-bar",
+    "atom-beautify",
+    "atom-json-color",
+    "file-icons",
+    "git-plus",
+    "highlight-selected",
+    "minimap",
+    "minimap-highlight-selected",
+    "pigments",
+    "Remote-FTP"
+  ]
 }
