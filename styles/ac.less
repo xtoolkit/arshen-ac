@@ -5,30 +5,48 @@ atom-workspace {
         width: 0;
     }
 
-    atom-panel.left {
-        margin-top: @ui-padding-pane;
-
-        .tool-bar {
-            border-top: 1px solid @base-border-color;
-            border-left: 1px solid @base-border-color;
-            margin-left: @ui-padding-pane;
-            border-top-left-radius: @component-border-radius;
-        }
-
-        .tool-panel {
-            border-top: 1px solid @base-border-color;
-        }
-    }
-
     .tool-bar {
+        padding-bottom: 104px;
+
+        button.tool-bar-btn {
+            margin: 3px 1px 1px 13px;
+        }
+
         .ion-navicon-round {
             position: absolute;
-            bottom: 48px;
+            bottom: 64px;
         }
 
         .ion-gear-a {
             position: absolute;
-            bottom: 0;
+            bottom: 12px;
+        }
+
+        &.tool-bar-24px.tool-bar-vertical {
+            .tool-bar-spacer {
+                width: 60px;
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .tree-view-scroller {
+        margin-top: 0.5em;
+        border-top: 1px solid @base-border-color;
+
+        .tree-view {
+            margin-top: -7px;
+
+            &:before {
+                margin-top: 7px;
+                height: 36px;
+            }
+
+            .project-root {
+                &:before {
+                    height: 37px;
+                }
+            }
         }
     }
 
@@ -58,12 +76,15 @@ atom-workspace {
             width: 100%;
             top: auto;
             flex: initial;
-            min-width: 100%;
+            min-width: 100%!important;
             border-radius: 0;
             cursor: pointer;
 
             .title {
                 text-align: left;
+                background-color: transparent;
+                -webkit-mask: initial;
+                border: 0;
             }
 
             .icon:before {
@@ -71,7 +92,6 @@ atom-workspace {
             }
 
             &.active {
-                background: @input-background-color;
                 border-radius: 0;
 
                 &:after {
@@ -83,6 +103,82 @@ atom-workspace {
                     top: 0;
                     left: 0;
                     bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+[theme-one-dark-ui-layoutmode="auto"] {
+    atom-workspace {
+        atom-pane-container {
+            atom-pane {
+                border: 0;
+            }
+        }
+    }
+}
+
+.chromebox {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 1px;
+        right: 0;
+        left: 1px;
+        height: 18px;
+        -webkit-app-region: drag;
+    }
+
+    .chromecbox {
+        float: left;
+        height: 12px;
+        margin: 18px 12px 12px 4px;
+        position: relative;
+        z-index: 1;
+        width: 60px;
+
+        a {
+            float: left;
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background-color: #fc4246;
+            border: 1px solid #d42a30;
+            margin-left: 8px;
+            font-size: 8px;
+            line-height: 12px;
+            color: #fff;
+
+            &.xmin {
+                background-color: #f4b029;
+                border: 1px solid #cc8d2e;
+            }
+
+            &.xmax {
+                background-color: #199f28;
+                border: 1px solid #1d7e20;
+            }
+
+            i {
+                display: none;
+                float: left;
+                width: 10px;
+                height: 10px;
+                text-align: center;
+
+                &:before {
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        &:hover {
+            a {
+                i {
+                    display: block;
                 }
             }
         }
