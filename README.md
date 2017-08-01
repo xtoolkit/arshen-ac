@@ -2,7 +2,7 @@
 
 arshen atom (pre) config with most usable package.
 
-![arshen-ac](https://cloud.githubusercontent.com/assets/8210666/23826782/62b7cb3a-06b9-11e7-9534-17d7ab459c70.png)
+![arshen-ac](https://user-images.githubusercontent.com/8210666/28826079-f90593a8-76dd-11e7-9d71-db10a904d882.png)
 
 ## includes
 
@@ -18,3 +18,10 @@ arshen atom (pre) config with most usable package.
 * package-deps "minimap-highlight-selected"
 * package-deps "pigments"
 * package-deps "Remote-FTP"
+
+## updates
+
+### 0.9.6 (2017/08/01)
+
+* update style for 1.17.0<=atom
+* fix some thing bugs :)

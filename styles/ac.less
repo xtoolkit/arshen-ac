@@ -1,90 +1,108 @@
-@import "ui-variables";
+@import 'ui-variables';
 
 atom-workspace {
-    atom-text-editor.editor .wrap-guide {
-        width: 0;
-    }
+  atom-text-editor.editor .wrap-guide {
+    width: 0;
+  }
 
-    atom-panel.left {
-        margin-top: @ui-padding-pane;
+  atom-pane {
+    margin-top: @ui-padding-pane;
+  }
 
-        .tool-bar {
-            border-top: 1px solid @base-border-color;
-            border-left: 1px solid @base-border-color;
-            margin-left: @ui-padding-pane;
-            border-top-left-radius: @component-border-radius;
-        }
-
-        .tool-panel {
-            border-top: 1px solid @base-border-color;
-        }
-    }
+  atom-panel.left {
+    margin-top: @ui-padding-pane;
 
     .tool-bar {
-        .ion-navicon-round {
-            position: absolute;
-            bottom: 48px;
-        }
-
-        .ion-gear-a {
-            position: absolute;
-            bottom: 0;
-        }
+      margin-left: @ui-padding-pane;
+      border-top: 1px solid @base-border-color;
+      border-left: 1px solid @base-border-color;
+      border-top-left-radius: @component-border-radius;
     }
 
-    atom-pane-container atom-pane .item-views {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 200px;
-        right: 0;
-        border-top: 1px solid @base-border-color;
+    .tool-panel {
+      border-top: 1px solid @base-border-color;
+    }
+  }
+
+  atom-panel-container.right atom-pane-container atom-pane,
+  atom-workspace-axis.vertical atom-pane-container atom-pane {
+    border-right: 0;
+    border-bottom: 0;
+
+    .item-views {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 200px;
+      margin-right: @ui-padding-pane;
+      border: 1px solid @base-border-color;
+      border-left: 0;
     }
 
     .tab-bar {
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        height: auto;
-        width: 200px;
-        display: block;
-        border: 1px solid @base-border-color;
-        border-right: 0;
-        border-bottom: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 200px;
+      height: auto;
+      border: 1px solid @base-border-color;
+      border-right: 0;
+      border-bottom: 0;
+      box-shadow: 0 0 0;
 
-        .tab {
-            float: right;
-            width: 100%;
-            top: auto;
-            flex: initial;
-            min-width: 100%;
-            border-radius: 0;
-            cursor: pointer;
+      .tab {
+        width: 100% !important;
+        cursor: pointer;
+        border-left: 0;
 
-            .title {
-                text-align: left;
-            }
+        .title {
+          text-align: left;
 
-            .icon:before {
-                margin: 0 10px 0 0;
-            }
-
-            &.active {
-                background: @input-background-color;
-                border-radius: 0;
-
-                &:after {
-                    display: none;
-                }
-
-                &:before {
-                    border-radius: 0;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                }
-            }
+          &:before {
+            margin: 0 10px 0 2px !important;
+          }
         }
+
+        &:last-of-type {
+          box-shadow: 0 0 0;
+        }
+      }
     }
+  }
+
+  .tab-bar {
+    border-top: 1px solid @base-border-color;
+  }
+
+  atom-dock.left {
+    .atom-dock-inner.left {
+      border-right: 0;
+    }
+
+    .tab-bar li.active {
+      padding-bottom: 1px;
+      background-color: @base-border-color;
+    }
+  }
+
+  atom-dock.right {
+    .atom-dock-inner.right {
+      border-left: 0;
+    }
+  }
+
+  .tool-bar {
+    .ion-navicon-round {
+      position: absolute;
+      bottom: 52px;
+    }
+
+    .ion-gear-a {
+      position: absolute;
+      bottom: 0;
+    }
+  }
 }
