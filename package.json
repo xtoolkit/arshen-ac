@@ -1,6 +1,6 @@
 {
-  "name": "arshen-ac",
-  "main": "./lib/arshen-ac",
+  "name": "arshen-actemp",
+  "main": "./lib/arshen-actemp",
   "version": "0.0.0",
   "description": "arshen atom config",
   "repository": "https://github.com/xtoolkit/arshen-ac",
