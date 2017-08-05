@@ -1,3 +1,7 @@
+## 0.9.6 (2017/08/01)
+* update style for 1.17.0<=atom
+* fix some thing bugs :)
+
 ## 0.9.0 - First Release
 * initial build
 * add vertical tabs

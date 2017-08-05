@@ -18,10 +18,3 @@ arshen atom (pre) config with most usable package.
 * package-deps "minimap-highlight-selected"
 * package-deps "pigments"
 * package-deps "Remote-FTP"
-
-## updates
-
-### 0.9.6 (2017/08/01)
-
-* update style for 1.17.0<=atom
-* fix some thing bugs :)
