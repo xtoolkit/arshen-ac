@@ -1,7 +1,7 @@
 {
   "name": "arshen-ac",
   "main": "./lib/arshen-ac",
-  "version": "0.0.0",
+  "version": "0.9.6",
   "description": "arshen atom config",
   "repository": "https://github.com/xtoolkit/arshen-ac",
   "license": "MIT",
