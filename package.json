@@ -1,12 +1,12 @@
 {
-  "name": "arshen-actemp",
-  "main": "./lib/arshen-actemp",
+  "name": "arshen-ac",
+  "main": "./lib/arshen-ac",
   "version": "0.0.0",
   "description": "arshen atom config",
   "repository": "https://github.com/xtoolkit/arshen-ac",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.17.0 <2.0.0"
+    "atom": ">=1.19.0 <2.0.0"
   },
   "dependencies": {
     "atom-package-deps": "^3.0.7"
@@ -41,7 +41,6 @@
     "highlight-selected",
     "minimap",
     "minimap-highlight-selected",
-    "pigments",
     "Remote-FTP"
   ]
 }

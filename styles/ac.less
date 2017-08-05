@@ -11,6 +11,7 @@ atom-workspace {
 
   atom-panel.left {
     margin-top: @ui-padding-pane;
+    border-right: 0;
 
     .tool-bar {
       margin-left: @ui-padding-pane;
@@ -24,7 +25,6 @@ atom-workspace {
     }
   }
 
-  atom-panel-container.right atom-pane-container atom-pane,
   atom-workspace-axis.vertical atom-pane-container atom-pane {
     border-right: 0;
     border-bottom: 0;
@@ -50,7 +50,6 @@ atom-workspace {
       height: auto;
       border: 1px solid @base-border-color;
       border-right: 0;
-      border-bottom: 0;
       box-shadow: 0 0 0;
 
       .tab {
@@ -80,17 +79,15 @@ atom-workspace {
   atom-dock.left {
     .atom-dock-inner.left {
       border-right: 0;
+
+      &.atom-dock-open {
+        border-left: 1px solid @base-border-color;
+      }
     }
 
     .tab-bar li.active {
       padding-bottom: 1px;
       background-color: @base-border-color;
-    }
-  }
-
-  atom-dock.right {
-    .atom-dock-inner.right {
-      border-left: 0;
     }
   }
 
