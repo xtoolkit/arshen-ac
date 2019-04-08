@@ -2,7 +2,7 @@
 
 arshen atom config with most usable package.
 
-![arshen-ac](https://user-images.githubusercontent.com/8210666/31226483-1fe06f24-a9e3-11e7-8724-3d45ac01ba49.png)
+![arshen-ac](https://raw.githubusercontent.com/xtoolkit/arshen-ac/master/screenshot.png)
 
 * in version 1.0.0 use most [atom-title-bar-replacer](https://github.com/sindrets/atom-title-bar-replacer) scripts writed by [sindrets](https://github.com/sindrets/).
 

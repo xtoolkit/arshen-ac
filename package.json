@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "atom-package-deps": "^3.0.7",
-    "jquery": "^2.1.4"
+    "jquery": "^3.3"
   },
   "package-deps": [
     "docblockr",
