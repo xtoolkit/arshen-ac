@@ -10,15 +10,8 @@ atom-workspace {
   }
 
   atom-panel.left {
-    margin-top: @ui-padding-pane;
+    margin-top: 0;
     border-right: 0;
-
-    .tool-bar {
-      margin-left: @ui-padding-pane;
-      border-top: 1px solid @base-border-color;
-      border-left: 1px solid @base-border-color;
-      border-top-left-radius: @component-border-radius;
-    }
 
     .tool-panel {
       border-top: 1px solid @base-border-color;
@@ -77,6 +70,121 @@ atom-workspace {
   }
 
   atom-dock.left {
+    .xmenu {
+      position: absolute;
+      left: 0;
+      top: @ui-padding-pane;
+
+      button {
+        font-size: 16px;
+        padding: 1px 9px 2px;
+        line-height: 1;
+        position: absolute;
+        top: 2px;
+        background-image: none;
+        background-color: darken(@button-background-color, 7%);
+        left: 14px;
+        width: 32px;
+        text-align: center;
+
+        &:focus {
+          box-shadow: 0 0 0;
+        }
+
+        &:hover {
+          background-image: none;
+          background-color: darken(@button-background-color-hover, 7%);
+        }
+
+        &:active {
+          outline: 0;
+        }
+      }
+
+      .xsmenu {
+        position: absolute;
+        width: 240px;
+        height: auto;
+        z-index: 11;
+        top: 8px;
+        left: 50px;
+        background: @base-border-color;
+        border-radius: 5px;
+        box-shadow: 0 0 5px darken(@base-border-color,2%);
+        display: none;
+
+        .menu-label {
+          display: block;
+          min-height: 32px;
+          line-height: 18px;
+          text-indent: 0;
+          padding: 6px 18px;
+          position: relative;
+
+          .menu-item {
+            display: block;
+            min-height: 30px;
+            line-height: 18px;
+            text-indent: 0;
+            padding: 6px 18px;
+            position: relative;
+            background: @base-border-color;
+          }
+
+          &.hovered,
+          &:hover,
+          .menu-item.selected,
+          .menu-item:hover {
+            background: darken(@base-border-color,3%);
+            cursor: pointer;
+          }
+
+          &:focus,
+          .menu-item:focus {
+            background: @button-background-color-selected;
+          }
+
+          .menu-box {
+            display: none;
+            position: absolute;
+            width: 240px;
+            height: auto;
+            z-index: 10;
+            top: 10px;
+            left: 96%;
+            background: @base-border-color;
+            border-radius: 5px;
+            box-shadow: 0 0 5px darken(@base-border-color,2%);
+
+            hr {
+              margin: 2px;
+            }
+
+            .menu-item {
+              .menu-item-keystroke {
+                float: right;
+              }
+
+              &.has-sub {
+                .menu-box {
+                  display: none;
+                  left: 7%;
+                }
+
+                &.open .menu-box {
+                  display: block;
+                }
+              }
+            }
+          }
+
+          &.open .menu-box {
+            display: block;
+          }
+        }
+      }
+    }
+
     .atom-dock-inner.left {
       border-right: 0;
 
@@ -92,7 +200,9 @@ atom-workspace {
   }
 
   .tool-bar {
-    .ion-navicon-round {
+    padding-bottom: 104px;
+
+    .icon-terminal {
       position: absolute;
       bottom: 52px;
     }
@@ -100,6 +210,107 @@ atom-workspace {
     .ion-gear-a {
       position: absolute;
       bottom: 0;
+    }
+
+    button.tool-bar-btn {
+      margin: 3px 1px 1px 13px;
+    }
+
+    &.tool-bar-24px {
+      &.tool-bar-vertical {
+        .tool-bar-spacer {
+          width: 60px;
+          margin-left: 8px;
+        }
+      }
+
+      .tool-bar-btn {
+        width: 50px;
+      }
+    }
+  }
+}
+
+.platformio-ide-terminal {
+  margin-right: 0.5em;
+  border-left: 1px solid @base-border-color;
+  border-right: 1px solid @base-border-color;
+
+  .input-block {
+    border-top: 1px solid @base-border-color;
+    border-bottom: 1px solid @base-border-color;
+    margin-top: 7px !important;
+  }
+}
+
+.platformio-ide-terminal {
+  &.status-bar {
+    vertical-align: baseline !important;
+  }
+}
+
+.chromebox {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 0;
+    left: 1px;
+    height: 14px;
+    -webkit-app-region: drag;
+  }
+
+  .chromecbox {
+    float: left;
+    height: 12px;
+    margin: 15px 12px 19px 4px;
+    position: relative;
+    z-index: 1;
+    width: 60px;
+
+    a {
+      float: left;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+      background-color: #fc4246;
+      border: 1px solid #d42a30;
+      margin-left: 8px;
+      font-size: 8px;
+      line-height: 12px;
+      color: #fff;
+
+      &.xmin {
+        background-color: #f4b029;
+        border: 1px solid #cc8d2e;
+      }
+
+      &.xmax {
+        background-color: #199f28;
+        border: 1px solid #1d7e20;
+      }
+
+      i {
+        display: none;
+        float: left;
+        width: 10px;
+        height: 10px;
+        text-align: center;
+
+        &:before {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    &:hover {
+      a {
+        i {
+          display: block;
+        }
+      }
     }
   }
 }

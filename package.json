@@ -1,27 +1,37 @@
 {
   "name": "arshen-ac",
   "main": "./lib/arshen-ac",
-  "version": "0.9.6",
+  "version": "2.0.0",
   "description": "arshen atom config",
   "repository": "https://github.com/xtoolkit/arshen-ac",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.19.0 <2.0.0"
+    "atom": ">=1.20.0 <2.0.0"
   },
   "dependencies": {
-    "atom-package-deps": "^3.0.7"
+    "atom-package-deps": "^3.0.7",
+    "jquery": "^2.1.4"
   },
   "package-deps": [
+    "docblockr",
+    "atom-browser",
     "tool-bar",
     "atom-beautify",
-    "atom-json-color",
     "file-icons",
     "git-plus",
     "highlight-selected",
     "minimap",
     "minimap-highlight-selected",
-    "pigments",
-    "Remote-FTP"
+    "Remote-FTP",
+    "busy-signal",
+    "intentions",
+    "language-babel",
+    "language-vue",
+    "linter",
+    "linter-jshint",
+    "linter-php",
+    "linter-ui-default",
+    "platformio-ide-terminal"
   ],
   "consumedServices": {
     "tool-bar": {

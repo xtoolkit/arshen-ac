@@ -1,6 +1,21 @@
-## 0.9.6 (2017/08/01)
-* update style for 1.17.0<=atom
-* fix some thing bugs :)
+## 1.0.0
+
+* add some IDE like tools
+* add chrome window controller
+* add custom title menu bar
+* fix some problem
+* remove package-deps "pigments" (cpu resource problem)
+* add package-deps "docblockr"
+* add package-deps "atom-browser"
+* add package-deps "busy-signal"
+* add package-deps "intentions"
+* add package-deps "language-babel"
+* add package-deps "language-vue"
+* add package-deps "linter"
+* add package-deps "linter-jshint"
+* add package-deps "linter-php"
+* add package-deps "linter-ui-default"
+* add package-deps "platformio-ide-terminal"
 
 ## 0.9.0 - First Release
 * initial build
